@@ -2,7 +2,13 @@
 
 一个使用 React、Three.js 和 shadcn/ui 构建的交互式三维解剖探索器。将 BodyParts3D 成年男性参考解剖模型拆分为 **2,234 个可单独选择的网格**，探索 **15 个解剖系统**，并搜索 **3,432 个带名称的概念**。
 
-**[打开在线演示](https://human-atlas-seven.vercel.app)**
+**[打开中文版在线网站](https://lll888666.github.io/human-atlas-chinese/)**
+
+## 原始仓库
+
+本中文版基于原始项目 **[ashemag/human-atlas](https://github.com/ashemag/human-atlas)**（原仓库名：`human-atlas`）制作。感谢原作者提供交互式三维解剖图谱的应用代码与工程基础。
+
+本仓库在保留原始项目结构、模型数据和许可证要求的基础上，完成了中文界面、本地化医学术语、中文解剖结构名称以及 GitHub Pages 部署适配。解剖数据的来源与归属信息请参阅 [ATTRIBUTION.md](public/ATTRIBUTION.md)。
 
 ## 探索方式
 

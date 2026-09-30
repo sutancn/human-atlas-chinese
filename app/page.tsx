@@ -31,7 +31,7 @@ export default function Home(){
  return <main className="studio">
   {atlas&&<AnatomyScene atlas={atlas} state={{...state,inspectorOpen:details&&selectedParts.length>0}} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
   <div className="vignette"/>
-  <header className="identity"><div className="eyebrow"><span className="status-dot"/> 交互式人体解剖</div><h1>人体图谱<Badge variant="outline" className="edition">三维</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():'2,234'} 个三维结构 <span>·</span> BodyParts3D</div></header>
+  <header className="identity"><div className="eyebrow"><span className="status-dot"/> 交互式人体解剖</div><h1>人体图谱deployed by 舒坦<Badge variant="outline" className="edition">三维</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():'2,234'} 个三维结构 <span>·</span> BodyParts3D</div></header>
   <nav className="top-actions" aria-label="探索面板"><Button variant="ghost" className={panel==='search'?'active':''} onClick={()=>openPanel('search')} aria-label="搜索解剖结构"><Search size={18}/><span>查找结构</span><kbd>/</kbd></Button><Button variant="ghost" className="icon-button" aria-label="关于本图谱" onClick={()=>{setDetails(false);setPanel(null);setAbout(true);}}><Info size={18}/></Button></nav>
   <section className={`layers-panel glass ${panel==='layers'?'mobile-open':''}`} aria-label="解剖层次">
    <div className="panel-heading"><span>系统</span><Button variant="ghost" className="mobile-only icon-button" onClick={()=>setPanel(null)} aria-label="关闭系统面板"><X size={18}/></Button><Badge variant="secondary" className="desktop-only small-number">{activeSystems.length}</Badge></div>
